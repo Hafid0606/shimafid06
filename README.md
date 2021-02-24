@@ -15,8 +15,8 @@ Follow The Steps Below!
 > pkg update -y
 > pkg upgrade -y
 > pkg install git -y
-> git clone https://github.com/azizae-official/aebot
-> cd aebot 
+> git clone https://github.com/Hafid0606/shimafid06
+> cd shimafid06
 > npm cache clear
 > bash install.sh
 > npm audit fix
