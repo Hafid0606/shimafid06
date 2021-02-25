@@ -1,6 +1,6 @@
 /*
 * Tambahin nama author lah
-* Author MhankBarBar, www.youtube.com/azizae, Fcx7
+* Author MhankBarBar, Fcx7
 * Tambahin ya Cape Gan ngefix² Yg Ga work
 * Jan numpang nama doank
 
@@ -19,11 +19,11 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const { color, bgcolor } = require('./lib/color')
-const { help } = require('./aebot/help')
-const { rules } = require('./aebot/rules')
-const { bahasa } = require('./aebot/bahasa')
-const { donasi } = require('./aebot/donasi')
-const { limits } = require('./aebot/limit')
+const { help } = require('./shimafid/help')
+const { rules } = require('./shimafid/rules')
+const { bahasa } = require('./shimafid/bahasa')
+const { donasi } = require('./shimafid/donasi')
+const { limits } = require('./shimafid/limit')
 
 const fs = require('fs')
 const moment = require('moment-timezone')
@@ -145,8 +145,8 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const AzizAE = ["6285155441072@s.whatsapp.net"]
-			const aziz = mek.message.conversation
+			const HAFID = ["6288213588216@s.whatsapp.net"]
+			const Hafid = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
 			pushname2 = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
@@ -188,11 +188,11 @@ async function starts() {
 			ban = [
 			
 			]
-			const ownerNumber = [
-			"6285155441072@s.whatsapp.net"
+			"6288213588216@s.whatsapp.net"
 			]
 			premium = [
-			"6285155441072@s.whatsapp.net"
+			const ownerNumber = [
+			"6288213588216@s.whatsapp.net"
 			]
 			
 			const apakahh = [
@@ -489,7 +489,7 @@ async function starts() {
                 var year = (yy < 1000) ? yy + 1900 : yy;
                 const tanggal = `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
                 setTimeout( () => {
-					costum(help(prefix, instagram, yt, name, pushname2, user, limitt), text, AzizAE, replySet)
+					costum(help(prefix, instagram, yt, name, pushname2, user, limitt), text, shimafid, replySet)
 					}, 15000)
 					setTimeout( () => {
 					client.sendMessage(from, rules(name, uptime, tanggal, jam, prefix), text, {quoted: mek })
